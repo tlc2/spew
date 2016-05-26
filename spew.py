@@ -18,8 +18,8 @@ def spew():
 		b = round(item, 8) #truncate to 8dp
 		total = total + b
 		print 'Sending ' + str(b) + ' to  ' + address
-		r = subprocess.check_output('./darkcoind sendtoaddress ' + address + ' ' + str(b), shell=True)
-		print './darkcoind sendtoaddress ' + address + ' ' + str(b)
+		r = subprocess.check_output('./bitcredit-cli sendtoaddress ' + address + ' ' + str(b), shell=True)
+		print './bitcredit-cli sendtoaddress ' + address + ' ' + str(b)
 		print 'Total sent: ' + str(total)
 
 spew()
