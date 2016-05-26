@@ -22,23 +22,4 @@ def spew():
 		print './darkcoind sendtoaddress ' + address + ' ' + str(b)
 		print 'Total sent: ' + str(total)
 
-
-#now wait for incoming from paired wallet
-#time.sleep(120)
-#mainloop
-#while 1:
-	#s = 0
-	#get current blockheigt
-	#h = subprocess.check_output('./darkcoind getbalance', shell=True)
-	#hint = int(h)
-	#if hint > s:
-		#spew()
-		#s += hint
-
-		
-	#print '/n/n/n/nspew1/n/n/n/n'
-	#spew()
-	#time.sleep(120)
-	#get new? blockheight
-	
 spew()
