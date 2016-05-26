@@ -5,6 +5,6 @@ place in same dir as bitcredit-cli
 
 make sure wallet is unlocked
 
-run with "python spew.py <amount> <number of random chunks> <to address>"
+run with "python spew.py amount number-of-random-chunks to-address"
 
 requires numpy module... "sudo pip install numpy"
