@@ -1,5 +1,10 @@
 # spew
-simple transaction spammer for testing blockchain tx capacity
+simple python transaction spammer for testing blockchain tx capacity
 
-requires numpy
-"pip install numpy"
+place in same dir as bitcredit-cli
+
+make sure wallet is unlocked
+
+run with "python spew.py <amount> <number of random chunks> <to address>"
+
+requires numpy module... "sudo pip install numpy"
