@@ -1,8 +1,8 @@
 import os, sys, subprocess
 import numpy as np
 
-#       usage: python spew.py <amount> <number of random chunks> <to address>
-#       eg. python spew.py 100 5 <address> sends 100 split into 5 random chunks to <address>
+#	usage: python spew.py <amount> <number of random chunks> <to address>
+#	eg. python spew.py 100 5 <address> sends 100 split into 5 random chunks to <address>
 
 def spew():
 
@@ -18,8 +18,8 @@ def spew():
         b = round(item, 8) #truncate to 8dp
         total = total + b
         print 'Sending ' + str(b) + ' to  ' + address
-        r = subprocess.check_output('./bitcredit-cli sendtoaddress ' + address + ' ' + str(b)$
+        r = subprocess.check_output('./bitcredit-cli sendtoaddress ' + address + ' ' + str(b), shell=True)
         print './bitcredit-cli sendtoaddress ' + address + ' ' + str(b)
         print 'Total sent: ' + str(total)
-
+	
 spew()
